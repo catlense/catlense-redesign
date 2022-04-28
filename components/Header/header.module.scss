@@ -1,0 +1,115 @@
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .links {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    @media(max-width: 970px) {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    a {
+      font-weight: 500;
+      margin-left: 15px;
+      margin-right: 15px;
+      color: #555;
+      transition: color .3s;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 50px);
+    transition: right .3s;
+    .upline {
+      width: 100%;
+      margin-bottom: 40px;
+      display: none;
+      p {
+        font-weight: bold;
+        color: #333;
+        font-size: 22px;
+      }
+      .close {
+        margin-left: auto;
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    @media(max-width: 970px) {
+      &:not(.active) {
+        right: -500px;
+      }
+      &.active {
+        right: 0;
+        .upline {
+          display: flex;
+        }
+      }
+      flex-direction: column;
+      align-items: flex-start;
+      width: auto;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      background-color: #f5f6f7;
+      padding: 20px;
+      height: calc(100vh - 58px);
+      z-index: 999;
+      padding-top: 38px;
+      min-width: 240px;
+      a {
+        margin: 0;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      .btnBackcall {
+        width: calc(100% - 60px);
+        text-align: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .btnBackcall {
+    height: 50px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #FF7D7D 0%, #FF5454 100%);
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    @media(max-width: 930px) {
+      margin-top: 30px;
+    }
+  }
+
+  .openSidebar {
+    display: none;
+    @media(max-width: 970px) {
+      display: block;
+      cursor: pointer;
+    }
+  }
+}
