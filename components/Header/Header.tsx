@@ -11,6 +11,8 @@ const CustomLogo = React.forwardRef(({className}:any, ref) => {
   )
 })
 
+CustomLogo.displayName = 'CustomLogo'
+
 const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
