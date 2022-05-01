@@ -5,11 +5,11 @@ import React, { useState } from 'react'
 import Burger from '../../assets/burger.svg'
 import Close from '../../assets/close.svg'
 
-// const CustomLogo = React.forwardRef(({className}:any, ref) => {
-//   return(
-//     <Logo cRef={ref} className={className} />
-//   )
-// })
+const CustomLogo = React.forwardRef(({className}:any, ref) => {
+  return(
+    <Logo cRef={ref} className={className} />
+  )
+})
 
 const Header = () => {
 
@@ -18,7 +18,7 @@ const Header = () => {
   return(
     <header className={s.mainHeader}>
       <Link href={'/'}>
-        <Logo className={s.logo} />
+        <CustomLogo className={s.logo} />
       </Link>
 
       <div className={`${s.navbar} ${menuOpen && s.active}`}>
