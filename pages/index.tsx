@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '../components/Header/Header'
 import FirstScreen from '../components/Index/FirstScreen/FirstScreen'
 import AboutBlock from '../components/Index/AboutBlock/AboutBlock'
+import PortfolioBlock from '../components/Index/PortfolioBlock/PortfolioBlock'
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <Header />
       <FirstScreen />
       <AboutBlock />
+      <PortfolioBlock />
     </>
   )
 }

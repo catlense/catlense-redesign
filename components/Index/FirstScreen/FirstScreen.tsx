@@ -9,7 +9,7 @@ import Portfolio from '../../portfolio.data'
 
 const FirstScreen = () => {
   return(
-    <div className={s.firstScreen}>
+    <div className={`${s.firstScreen} container`}>
       <div className={s.leftSide}>
         <h1>Мы создадим сайт Вашей мечты</h1>
         <p>Если Вам нужен лендинг, сайт для бизнеса или иной масштабный проект, то смело обращайтесь к нам</p>

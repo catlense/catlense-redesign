@@ -23,5 +23,19 @@ export default [
     img: RZDLogo.src,
     link: 'rzd',
     specColor: '#000'
-  }
+  },
+  {
+    title: 'rem-well.ru',
+    description: 'Сайт для компании, ремонтирующей локомотивные устройства безопасности',
+    img: RemwellLogo.src,
+    link: 'remwell',
+    specColor: '#2295FF'
+  },
+  {
+    title: 'rem-well.ru',
+    description: 'Сайт для компании, ремонтирующей локомотивные устройства безопасности',
+    img: RemwellLogo.src,
+    link: 'remwell',
+    specColor: '#2295FF'
+  },
 ]

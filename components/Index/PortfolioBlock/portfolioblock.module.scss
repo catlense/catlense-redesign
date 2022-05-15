@@ -1,0 +1,23 @@
+.portfolioBlock {
+  padding-top: 120px;
+  h1 {
+    color: #333;
+  }
+  .portfolioContainer {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-row-gap: 100px;
+    justify-content: space-between;
+    @media(max-width: 1320px) {
+      grid-template-columns: 48% 48%;
+      grid-row-gap: 50px;
+    }
+    @media(max-width: 600px) {
+      @media(max-width: 1320px) {
+        grid-template-columns: 100%;
+        grid-row-gap: 25px;
+      }
+    }
+  }
+}
