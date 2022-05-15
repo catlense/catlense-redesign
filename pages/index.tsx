@@ -5,6 +5,7 @@ import FirstScreen from '../components/Index/FirstScreen/FirstScreen'
 import AboutBlock from '../components/Index/AboutBlock/AboutBlock'
 import PortfolioBlock from '../components/Index/PortfolioBlock/PortfolioBlock'
 import ContactsBlock from '../components/Index/ContactsBlock/ContactsBlock'
+import Footer from '../components/Index/Footer/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <AboutBlock />
       <PortfolioBlock />
       <ContactsBlock />
+      <Footer />
     </>
   )
 }

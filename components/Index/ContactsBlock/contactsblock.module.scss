@@ -5,10 +5,18 @@
   margin: 0 auto;
   margin-top: 120px;
   border-radius: 25px;
+  @media(max-width: 1120px) {
+    border-radius: 0px;
+    padding: 30px 15px;
+  }
   .contacts {
     display: flex;
     justify-content: space-between;
     margin-top: 42px;
+    @media(max-width: 1020px) {
+      flex-direction: column;
+      margin-top: 0;
+    }
   }
   .contactBackcall {
     width: calc(100% - 62px);
@@ -17,9 +25,15 @@
     margin-top: 45px;
     border-radius: 15px;
     display: flex;
+    @media(max-width: 1120px) {
+      flex-direction: column;
+    }
     .texts {
       display: flex;
       flex-direction: column;
+      @media(max-width: 1120px) {
+        text-align: center;
+      }
       h2 {
         display: block;
         margin: 0;
@@ -33,6 +47,9 @@
         padding: 0;
         font-size: 16px;
         margin-top: 9px;
+        @media(max-width: 1120px) {
+          text-align: center;
+        }
       }
     }
     button {
@@ -47,6 +64,10 @@
       font-family: -apple-system, 'Montserrat', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       cursor: pointer;
       margin-left: auto;
+      @media(max-width: 1120px) {
+        width: 100%;
+        margin-top: 15px;
+      }
     }
   }
   h1 {
