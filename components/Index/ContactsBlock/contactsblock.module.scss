@@ -1,0 +1,64 @@
+.contactBlock {
+  padding: 60px;
+  background: #FAFAFA;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 120px;
+  border-radius: 25px;
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+  }
+  .contactBackcall {
+    width: calc(100% - 62px);
+    padding: 25px 31px;
+    background-color: white;
+    margin-top: 45px;
+    border-radius: 15px;
+    display: flex;
+    .texts {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 22px;
+        color: #333;
+      }
+      p {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        margin-top: 9px;
+      }
+    }
+    button {
+      height: 54px;
+      border: none;
+      background: linear-gradient(180deg, #FF7D7D 0%, #FF5454 100%);
+      border-radius: 15px;
+      color: #fff;
+      font-size: 16px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-family: -apple-system, 'Montserrat', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      cursor: pointer;
+      margin-left: auto;
+    }
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+  }
+  p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
