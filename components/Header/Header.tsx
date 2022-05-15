@@ -18,7 +18,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return(
-    <header className={s.mainHeader}>
+    <header className={`${s.mainHeader} container`}>
       <Link href={'/'}>
         <CustomLogo className={s.logo} />
       </Link>
