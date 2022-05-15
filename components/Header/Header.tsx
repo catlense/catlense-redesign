@@ -32,7 +32,6 @@ const Header = () => {
           <Link href={'/'}>Главная</Link>
           <Link href={'/'}>О нас</Link>
           <Link href={'/'}>Портфолио</Link>
-          <Link href={'/'}>Отзывы</Link>
           <Link href={'/'}>Контакты</Link>
         </div>
 
