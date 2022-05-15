@@ -12,7 +12,7 @@ CustomLogo.displayName = 'CustomLogo'
 
 const AboutBlock = () => {
   return(
-    <div className={`${s.aboutContainer} container`}>
+    <div className={`${s.aboutContainer} container`} id="about">
       <div className={s.leftSide}>
         <h2>Кто мы</h2>
         <h1>О нас</h1>

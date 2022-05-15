@@ -5,7 +5,7 @@ import ShoppingBag from '../../../assets/shopping-bag.svg'
 
 const PortfolioBlock = () => {
   return(
-    <div className={`container ${s.portfolioBlock}`}>
+    <div className={`container ${s.portfolioBlock}`} id="portfolio">
       <h1>Портфолио</h1>
       <div className={s.portfolioContainer}>
         {

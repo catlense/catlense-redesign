@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Burger from '../../assets/burger.svg'
 import Close from '../../assets/close.svg'
+import {Link as Reference} from 'react-scroll'
 
 const CustomLogo = React.forwardRef(({className}:any, ref) => {
   return(
@@ -30,9 +31,9 @@ const Header = () => {
         </div>
         <div className={s.links}>
           <Link href={'/'}>Главная</Link>
-          <Link href={'/'}>О нас</Link>
-          <Link href={'/'}>Портфолио</Link>
-          <Link href={'/'}>Контакты</Link>
+          <Reference to={'about'} smooth={true} onClick={() => setMenuOpen(false)}>О нас</Reference>
+          <Reference to={'portfolio'} smooth={true} onClick={() => setMenuOpen(false)}>Портфолио</Reference>
+          <Reference to={'contacts'} smooth={true} onClick={() => setMenuOpen(false)}>Контакты</Reference>
         </div>
 
         <div className={s.btnBackcall}>Обратный звонок</div>

@@ -6,7 +6,7 @@ import VKLogo from '../../../assets/VKLogo.svg'
 
 const ContactsBlock = () => {
   return(
-    <div className={`${s.contactBlock} container`}>
+    <div className={`${s.contactBlock} container`} id="contacts">
       <h1>Контакты</h1>
       <p>Свяжитесь с нами любым удобным для Вас способом</p>
       <div className={s.contacts}>
