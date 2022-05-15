@@ -14,10 +14,8 @@
       grid-row-gap: 50px;
     }
     @media(max-width: 600px) {
-      @media(max-width: 1320px) {
-        grid-template-columns: 100%;
-        grid-row-gap: 25px;
-      }
+      grid-template-columns: 100%;
+      grid-row-gap: 25px;
     }
   }
 }
