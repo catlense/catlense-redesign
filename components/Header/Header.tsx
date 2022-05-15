@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import Burger from '../../assets/burger.svg'
 import Close from '../../assets/close.svg'
 import {Link as Reference} from 'react-scroll'
+import { useRouter } from 'next/router'
 
 const CustomLogo = React.forwardRef(({className}:any, ref) => {
   return(
@@ -17,6 +18,7 @@ CustomLogo.displayName = 'CustomLogo'
 const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
+  const router = useRouter()
 
   return(
     <header className={`${s.mainHeader} container`}>
@@ -31,9 +33,9 @@ const Header = () => {
         </div>
         <div className={s.links}>
           <Link href={'/'}>Главная</Link>
-          <Reference to={'about'} smooth={true} onClick={() => setMenuOpen(false)}>О нас</Reference>
-          <Reference to={'portfolio'} smooth={true} onClick={() => setMenuOpen(false)}>Портфолио</Reference>
-          <Reference to={'contacts'} smooth={true} onClick={() => setMenuOpen(false)}>Контакты</Reference>
+          <Reference to={'about'} smooth={true} onClick={() => {setMenuOpen(false);window.location.pathname === '/' || router.push('/#about')}}>О нас</Reference>
+          <Reference to={'portfolio'} smooth={true} onClick={() => {setMenuOpen(false);window.location.pathname === '/' || router.push('/#portfolio')}}>Портфолио</Reference>
+          <Reference to={'contacts'} smooth={true} onClick={() => {setMenuOpen(false);window.location.pathname === '/' || router.push('/#contacts')}}>Контакты</Reference>
         </div>
 
         <div className={s.btnBackcall}>Обратный звонок</div>
