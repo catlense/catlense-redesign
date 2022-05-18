@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import Logo from '../../../assets/catlense-logo'
+import Logo from '../../assets/catlense-logo'
 import s from './footer.module.scss'
 
 const CustomLogo = React.forwardRef(({className}:any, ref) => {

@@ -5,7 +5,7 @@ import FirstScreen from '../components/Index/FirstScreen/FirstScreen'
 import AboutBlock from '../components/Index/AboutBlock/AboutBlock'
 import PortfolioBlock from '../components/Index/PortfolioBlock/PortfolioBlock'
 import ContactsBlock from '../components/Index/ContactsBlock/ContactsBlock'
-import Footer from '../components/Index/Footer/Footer'
+import Footer from '../components/Footer/Footer'
 
 const Home: NextPage = () => {
   return (
