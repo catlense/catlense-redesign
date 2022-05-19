@@ -10,7 +10,7 @@ const PortfolioTable = () => {
       <div className={s.portfolioCards}>
         {
           portfolioData ? portfolioData.map(e => {
-            return <PortfolioCard data={e} />
+            return <PortfolioCard key={Math.random() * 100} data={e} />
           }) : <p>Произошла ошибка... Мы уже работаем над её исправлением</p>
         }
       </div>
