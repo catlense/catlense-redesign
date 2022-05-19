@@ -16,6 +16,10 @@ const BackcallPopup = () => {
       return alert('Укажите Ваши контактные данные')
     }
     fetch(encodeURI(`https://api.telegram.org/bot${config.token}/sendMessage?chat_id=${config.chat_id}&text=Новая заявка catlense.ru\n\n<b>Связь:</b> ${contact}\n<b>Вопрос:</b> ${question}&parse_mode=html`))
+      .then(() => {
+        dispatch({type: 'backcallForm', payload: false})
+        alert('Вы успешно оставили заявку!')
+      })
   }
 
   return(
