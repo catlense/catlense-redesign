@@ -24,6 +24,7 @@
     font-size: 36px;
     opacity: .4;
     transition: opacity .3s;
+    user-select: none;
     cursor: pointer;
     &:hover {
       opacity: .8;

@@ -8,9 +8,9 @@ import {Link as Reference} from 'react-scroll'
 import { useRouter } from 'next/router'
 import { useDispatch } from 'react-redux'
 
-const CustomLogo = React.forwardRef(({className}:any, ref) => {
+const CustomLogo = React.forwardRef(({className, onClick}:any, ref) => {
   return(
-    <Logo cRef={ref} className={className} />
+    <Logo cRef={ref} className={className} onClick={onClick} />
   )
 })
 
@@ -28,9 +28,7 @@ const Header = () => {
 
   return(
     <header className={`${s.mainHeader} container`}>
-      <Link href={'/'}>
-        <CustomLogo className={s.logo} />
-      </Link>
+      <CustomLogo className={s.logo} onClick={() => router.push('/')} />
 
       <div className={`${s.navbar} ${menuOpen && s.active}`}>
         <div className={s.upline}>
@@ -40,7 +38,7 @@ const Header = () => {
         <div className={s.links}>
           <Link href={'/'}>Главная</Link>
           <Reference to={'about'} smooth={true} onClick={() => {setMenuOpen(false);window.location.pathname === '/' || router.push('/#about')}}>О нас</Reference>
-          <Reference to={'portfolio'} smooth={true} onClick={() => {setMenuOpen(false);window.location.pathname === '/' || router.push('/#portfolio')}}>Портфолио</Reference>
+          <Reference to={'portfolio'} smooth={true} onClick={() => {setMenuOpen(false);window.location.pathname === '/' || router.push('/portfolio')}}>Портфолио</Reference>
           <Reference to={'contacts'} smooth={true} onClick={() => {setMenuOpen(false);window.location.pathname === '/' || router.push('/#contacts')}}>Контакты</Reference>
         </div>
 

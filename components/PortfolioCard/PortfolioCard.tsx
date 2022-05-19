@@ -11,7 +11,7 @@ const PortfolioCard = ({data, type}:any) => {
         type === 'fullPortfolio' ?
         <Link href={'/portfolio'}>Открыть портфолио</Link>
         :
-        <Link href={`/blog/${data.link}`}>Подробнее</Link>
+        <Link href={`/portfolio/${data.link}`}>Подробнее</Link>
 
       }
     </div>

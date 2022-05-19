@@ -7,7 +7,7 @@ const PortfolioCard = ({img, title, description, link, specColor}:any) => {
       <img src={img} alt="Project logotype" className={s.image} />
       <h1 style={{color: specColor}}>{title}</h1>
       <p>{description}</p>
-      <Link href={`/blog/${link}`}>Подробнее</Link>
+      <Link href={`/portfolio/${link}`}>Подробнее</Link>
     </div>
   )
 }

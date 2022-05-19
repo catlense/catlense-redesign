@@ -8,8 +8,8 @@ const BackcallPopup = () => {
   const openned = useSelector((state:any) => state.openBackcall)
   const dispatch = useDispatch()
 
-  const [contact, setContact] = useState()
-  const [question, setQuestion] = useState()
+  const [contact, setContact] = useState('')
+  const [question, setQuestion] = useState('')
 
   const sendData = () => {
     fetch(encodeURI(`https://api.telegram.org/bot${config.token}/sendMessage?chat_id=${config.chat_id}&text=Новая заявка catlense.ru\n\n<b>Связь:</b> ${contact}\n<b>Вопрос:</b>: ${question}&parse_mode=html`))
