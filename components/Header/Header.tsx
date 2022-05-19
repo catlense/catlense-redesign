@@ -7,7 +7,6 @@ import Close from '../../assets/close.svg'
 import {Link as Reference} from 'react-scroll'
 import { useRouter } from 'next/router'
 import { useDispatch } from 'react-redux'
-import Image from 'next/image'
 
 const CustomLogo = React.forwardRef(({className, onClick}:any, ref) => {
   return(
@@ -47,7 +46,7 @@ const Header = () => {
       </div>
 
       <div className={s.openSidebar}>
-        <Image src={Burger.src} alt="" onClick={() => setMenuOpen(true)} />
+        <img src={Burger.src} alt="" onClick={() => setMenuOpen(true)} />
       </div>
 
     </header>
