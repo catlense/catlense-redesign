@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import s from './backcallpopup.module.scss'
+import config from '../config'
 
 const BackcallPopup = () => {
 
@@ -11,7 +12,7 @@ const BackcallPopup = () => {
   const [question, setQuestion] = useState()
 
   const sendData = () => {
-
+    fetch(encodeURI(`https://api.telegram.org/bot${config.token}/sendMessage?chat_id=${config.chat_id}&text=Новая заявка catlense.ru\n\n<b>Связь:</b> ${contact}\n<b>Вопрос:</b>: ${question}&parse_mode=html`))
   }
 
   return(
