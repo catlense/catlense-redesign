@@ -3,8 +3,12 @@ import s from './contactsblock.module.scss'
 import TelegramLogo from '../../../assets/TelegramLogo.svg'
 import GmailLogo from '../../../assets/GmailLogo.svg'
 import VKLogo from '../../../assets/VKLogo.svg'
+import { useDispatch } from 'react-redux';
 
 const ContactsBlock = () => {
+
+  const dispatch = useDispatch()
+
   return(
     <div className={`${s.contactBlock} container`} id="contacts">
       <h1>Контакты</h1>
@@ -19,7 +23,7 @@ const ContactsBlock = () => {
           <h2>Оставьте заявку здесь</h2>
           <p>Если способы выше Вам не подходят, то заполните форму и мы свяжемся с Вами</p>
         </div>
-        <button>Заполнить форму</button>
+        <button onClick={() => {dispatch({type: 'backcallForm', payload: true})}}>Заполнить форму</button>
       </div>
     </div>
   )

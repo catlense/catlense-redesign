@@ -6,14 +6,18 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import PortfolioCard from './PortfolioCard/PortfolioCard';
 import Portfolio from '../../portfolio.data'
+import { useDispatch } from 'react-redux';
 
 const FirstScreen = () => {
+
+  const dispatch = useDispatch()
+
   return(
     <div className={`${s.firstScreen} container`}>
       <div className={s.leftSide}>
         <h1>Мы создадим сайт Вашей мечты</h1>
         <p>Если Вам нужен лендинг, сайт для бизнеса или иной масштабный проект, то смело обращайтесь к нам</p>
-        <button>Связаться с нами</button>
+        <button onClick={() => {dispatch({type: 'backcallForm', payload: true})}}>Связаться с нами</button>
       </div>
 
 

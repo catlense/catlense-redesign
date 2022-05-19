@@ -6,6 +6,7 @@ import AboutBlock from '../components/Index/AboutBlock/AboutBlock'
 import PortfolioBlock from '../components/Index/PortfolioBlock/PortfolioBlock'
 import ContactsBlock from '../components/Index/ContactsBlock/ContactsBlock'
 import Footer from '../components/Footer/Footer'
+import BackcallPopup from '../components/BackcallPopup/BackcallPopup'
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
       <Head>
         <title>catlense</title>
       </Head>
-
+      <BackcallPopup />
       <Header />
       <FirstScreen />
       <AboutBlock />
