@@ -6,9 +6,9 @@ const LeftSideBar = ({data}:any) => {
     <div className={s.leftSidebar}>
       <img src={data?.img} alt="Project logotype" />
       <h2>{data?.subTitle}</h2>
-      <a href={`http://${data?.title}`} rel="noreferrer" target="_blank">{data?.title}</a>
+      <a href={`https://${data?.title}`} rel="noreferrer" target="_blank">{data?.title}</a>
       <p>Заказчик: <a href={data?.customer.href} target="_blank" rel="noreferrer">{data?.customer.text}</a></p>
-      <button style={{background: data?.specColor}}>Открыть проект</button>
+      <a style={{color: 'white'}} href={`https://${data?.title}`} rel="noreferrer" target="_blank"><button style={{background: data?.specColor}}>Открыть проект</button></a>
     </div>
   )
 
