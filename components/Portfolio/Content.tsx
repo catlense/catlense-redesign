@@ -5,7 +5,7 @@ const Content = ({data}:any) => {
     <div className={s.portfolioContent}>
       <h1>{data?.subTitle}</h1>
       <p className={s.description}>{data?.description}</p>
-      <p>{data?.text}</p>
+      <p dangerouslySetInnerHTML={{__html: data?.text}}></p>
     </div>
   )
 }
