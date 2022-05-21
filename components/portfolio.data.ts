@@ -1,6 +1,9 @@
 import RemwellLogo from '../assets/remwell-logo-96.png'
 import GPMLogo from '../assets/gpm-logo.jpeg'
 import RZDLogo from '../assets/voronin-rzd-logo.svg'
+import CatlenseLogo from '../assets/catlense-orange.png'
+import MygreenwayLogo from '../assets/mygreenway-logo.svg'
+import VoroninLogo from '../assets/voronin_logo.svg'
 
 export default [
   {
@@ -10,6 +13,7 @@ export default [
     link: 'remwell',
     specColor: '#2295FF',
     subTitle: 'Ремвелл',
+    date: '12.03.2020',
     customer: {href: 'mailto:office@rem-well.ru', text: 'office@rem-well.ru', name: 'Артём Пашнин'},
     text: `
     Ремвелл - Компания, занимающаяся техническим обслуживанием и ремонтом локомотивных устройств безопасности.
@@ -24,6 +28,7 @@ export default [
     description: 'Сайт под ключ для компании, занимающейся арендой строительной техники',
     img: GPMLogo.src,
     link: 'gpm-centr',
+    date: '25.07.2021',
     specColor: '#38D35B',
     subTitle: 'ГПМ-Центр',
     customer: {href: 'https://t.me/k_n_y_a_z_e_f_f', text: '@k_n_y_a_z_e_f_f', name: 'Алексей Князев'},
@@ -38,30 +43,56 @@ export default [
     title: 'rzd.voronin.xyz',
     description: 'Помощник поиска неисправностей для работников РЖД',
     img: RZDLogo.src,
+    date: '10.06.2021',
     link: 'rzd',
     specColor: '#000',
     subTitle: 'Помощник поиска неисправностей',
     customer: {href: 'mailto:e_voronin@mail.ru', text: 'e_voronin@mail.ru', name: 'Евгений Воронин'},
-    text: 'Какое-то описание проекта, подробно расписывающее что к чему...'
+    text: `
+    Сайт создан под ключ и закрывает проблемы поиска неисправностей для внутреннего пользования сотрудниками РЖД<br><br>
+    Стек разработки - Express + MongoDB & React
+    `
   },
   {
-    title: 'rzd.voronin.xyz',
-    description: 'Помощник поиска неисправностей для работников РЖД',
-    img: RZDLogo.src,
-    link: 'rzd',
-    specColor: '#000',
-    subTitle: 'Помощник поиска неисправностей',
-    customer: {href: 'mailto:e_voronin@mail.ru', text: 'e_voronin@mail.ru'},
-    text: 'Какое-то описание проекта, подробно расписывающее что к чему...'
+    title: 'old.catlense.ru',
+    description: 'Старая версия текущего сайта',
+    img: CatlenseLogo.src,
+    link: 'catlense',
+    date: '20.08.2021',
+    specColor: '#f89749',
+    subTitle: 'Catlense Landing v1.0',
+    customer: {href: 'https://t.me/catlense', text: '@catlense', name: 'Максим Воронин'},
+    text: 'Самая первая версия сайта catlense.ru<br><br>То, что Вы видите сейчас - полностью переработанная версия<br><br>Стек разработки - React',
+    imgStyle: {borderRadius: 50}
   },
   {
-    title: 'rzd.voronin.xyz',
-    description: 'Помощник поиска неисправностей для работников РЖД',
-    img: RZDLogo.src,
-    link: 'rzd',
-    specColor: '#000',
-    subTitle: 'Помощник поиска неисправностей',
-    customer: {href: 'mailto:e_voronin@mail.ru', text: 'e_voronin@mail.ru'},
-    text: 'Какое-то описание проекта, подробно расписывающее что к чему...'
+    title: 'mygreenway.shop',
+    description: 'Вёрстка шаблона интернет-магазина',
+    img: MygreenwayLogo.src,
+    link: 'mygreenway',
+    specColor: '#74c044',
+    subTitle: 'Mygreenway',
+    date: '04.06.2021',
+    customer: {href: 'https://t.me/olarsen', text: '@olarsen', name: 'Олег'},
+    text: `
+    Летом 2021 года к нам обратился один из заказчиков, с просьбой повторить дизайн интернет-магазина Greenway, внеся некоторые корректировки.<br><br>
+    Работа над проектом идёт по сей день.
+    <br><br>
+    Стек разработки - чистые php & js
+    `
+  },
+  {
+    title: 'voronin.xyz',
+    description: 'Сайт-визитка веб-разработчика',
+    img: VoroninLogo.src,
+    link: 'voronin',
+    date: '04.02.2020',
+    specColor: 'rgb(58 184 255)',
+    subTitle: 'Voronin Landing',
+    customer: {href: 'https://t.me/mv_voronin', text: '@mv_voronin', name: 'Максим Воронин'},
+    customLink: 'https://cdn.kwork.ru/files/portfolio/t0/20/c1e513e45d83f1dfc1569db0585121679101270d-1621968520.webp',
+    text: `
+    Один из первых профессиональных сайтов нашей компании, созданный на чистом php.
+    `
   },
 ]

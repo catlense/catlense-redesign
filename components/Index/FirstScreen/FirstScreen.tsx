@@ -34,7 +34,7 @@ const FirstScreen = () => {
           Portfolio.map(e => {
             return (
               <SwiperSlide key={Math.random() * 100}>
-                <PortfolioCard img={e.img} title={e.title} description={e.description} link={e.link} specColor={e.specColor} />
+                <PortfolioCard img={e.img} title={e.title} description={e.description} link={e.link} specColor={e.specColor} imgStyle={e.imgStyle} />
               </SwiperSlide>
             )
           })

@@ -4,12 +4,13 @@ import PortfolioCard from '../../PortfolioCard/PortfolioCard';
 import ShoppingBag from '../../../assets/shopping-bag.svg'
 
 const PortfolioBlock = () => {
+  const portfolio = portfolioData.slice(0, 5)
   return(
     <div className={`container ${s.portfolioBlock}`} id="portfolio">
       <h1>Портфолио</h1>
       <div className={s.portfolioContainer}>
         {
-          portfolioData.map(
+          portfolio.map(
             e => {
               return(<PortfolioCard key={Math.random() * 100} data={e} />)
             }
