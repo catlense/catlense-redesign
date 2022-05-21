@@ -11,6 +11,8 @@ const Portfolio: NextPage = () => {
     <>
       <Head>
         <title>Портфолио / Catlense</title>
+        <meta name="keywords" content="Портфолио catlense, портфолио кэтленс, портфолио Максим Воронин, портфолио, сайты, красивые сайты, топ сайтов, лучшие сайты, интересные сайты, сайт, купить сайт, заказать сайт, заказать лендинг, заказать визитку, заказать проект" />
+        <meta name="description" content="Портфолио Catlense Agency. Только взгляните на наши работы!" />
       </Head>
       <BackcallPopup />
       <Header />

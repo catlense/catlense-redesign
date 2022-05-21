@@ -19,6 +19,8 @@ const DetailPortfolio: NextPage = () => {
     <>
       <Head>
         <title>{work?.subTitle} / Catlense</title>
+        <meta name="description" content={work?.description} />
+        <meta name="keywords" content={`${work?.title}, ${work?.customer.name}, ${work?.subTitle}, ${work?.text}, ${work?.date}`} />
       </Head>
       <BackcallPopup />
       <Header />
