@@ -4,6 +4,7 @@ import BackcallPopup from "../../components/BackcallPopup/BackcallPopup";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import PortfolioTable from "../../components/Portfolio/PortfolioTable";
+import OGImage from '../../assets/og-image.png'
 
 const Portfolio: NextPage = () => {
 
@@ -13,6 +14,7 @@ const Portfolio: NextPage = () => {
         <title>Портфолио / Catlense</title>
         <meta name="keywords" content="Портфолио catlense, портфолио кэтленс, портфолио Максим Воронин, портфолио, сайты, красивые сайты, топ сайтов, лучшие сайты, интересные сайты, сайт, купить сайт, заказать сайт, заказать лендинг, заказать визитку, заказать проект" />
         <meta name="description" content="Портфолио Catlense Agency. Только взгляните на наши работы!" />
+        <meta property="og:image" content={OGImage.src} />
       </Head>
       <BackcallPopup />
       <Header />

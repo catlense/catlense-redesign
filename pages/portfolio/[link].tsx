@@ -8,6 +8,7 @@ import portfolioData from "../../components/portfolio.data";
 import Content from "../../components/Portfolio/Content";
 import LeftSideBar from "../../components/Portfolio/leftSideBar";
 import s from '../../components/Portfolio/portfolio.module.scss'
+import OGImage from '../../assets/og-image.png'
 
 const DetailPortfolio: NextPage = () => {
 
@@ -21,6 +22,7 @@ const DetailPortfolio: NextPage = () => {
         <title>{work?.subTitle} / Catlense</title>
         <meta name="description" content={work?.description} />
         <meta name="keywords" content={`${work?.title}, ${work?.customer.name}, ${work?.subTitle}, ${work?.text}, ${work?.date}`} />
+        <meta property="og:image" content={OGImage.src} />
       </Head>
       <BackcallPopup />
       <Header />
